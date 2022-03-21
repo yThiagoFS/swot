@@ -23,12 +23,17 @@ section>h1{
     display: block;
     
     
+    
+}
+section>h1::first-letter{
+    font-size: 5rem;
+    color: white;
 }
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right,#2D3E52 21%, #B40001,#089000, #1167b1,#ECBD00);
+    background-image: linear-gradient(to right,#2D3E52 20%, #B40001 39% ,#089000 56%, #1167b1 73%,#ECBD00 91%);
     height: 8vh;
     width: 100%;
     position: fixed;
@@ -54,6 +59,19 @@ nav ul li a{
     font-weight: bold;
     letter-spacing: 0.3rem;
 }
+.container {
+    display: flex;
+    
+}
+.conteudo {
+    background-color: rgba(56, 54, 54, 0.349);
+    width: 80rem;
+    height: 38rem;
+    margin: 1rem 1rem;
+    border-radius: 3.5rem 1.2rem 3.5rem 1.2rem;
+    
+    
+}
 .section1 {
     height: 100vh;
     width: 100%;
@@ -61,6 +79,7 @@ nav ul li a{
 .section2, .section3, .section4, .section5 {
     height: 100vh;
     width: 100%;
+    
     
 }
 .section2 {
