@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.section1 {
+    height: 90vh;
+    width: 100%;
+}
+.swot_img{
+    background-image: url(../img/swot-img.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
