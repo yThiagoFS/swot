@@ -42,6 +42,10 @@
         font-size: 1.4rem;
         line-height: 2.4rem;
     }
+    .conteudo>.titulo-grande{
+        font-size: 1.8rem;
+        font-weight: bolder;
+    }
 }
 @media screen and (max-width:865.6px) {
     .conteudo {
