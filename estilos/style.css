@@ -9,6 +9,7 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    font-family: sans-serif;
 }
 a , ul{
     color: white;
@@ -22,24 +23,24 @@ section>h1{
     text-align: center;
     display: block;
     
-    
-    
 }
 section>h1::first-letter{
     font-size: 5rem;
-    color: white;
+    color: rgb(245, 245, 245);
 }
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right,#2D3E52 20%, #B40001 39% ,#089000 56%, #1167b1 73%,#ECBD00 91%);
+    background-image: linear-gradient(to right,#2d3e52 20%, #B40001 39% ,#089000 56%, #1167b1 73%,#ECBD00 91%);
     height: 8vh;
     width: 100%;
     position: fixed;
-    
+    top: 0;
+    z-index: 10;
 
 }
+
 nav ul {
     display: flex;
     
@@ -59,17 +60,33 @@ nav ul li a{
     font-weight: bold;
     letter-spacing: 0.3rem;
 }
+.letras-nav {
+    display: none;
+}
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div{
+    width: 3.2rem;
+    height: 0.2rem;
+    background-color: #fff;
+    margin: 0.8rem;
+}
+
 .container {
     display: flex;
     
 }
+
+
 .conteudo {
     background-color: rgba(56, 54, 54, 0.349);
     width: 80rem;
     height: 38rem;
     margin: 1rem 1rem;
-    border-radius: 3.5rem 1.2rem 3.5rem 1.2rem;
-    
+    border-radius: 3.5rem 1.1rem 3.5rem 1.1rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.597) , inset 2px 2px 2px rgba(0, 0, 0, 0.597);
     
 }
 .section1 {
@@ -79,7 +96,6 @@ nav ul li a{
 .section2, .section3, .section4, .section5 {
     height: 100vh;
     width: 100%;
-    
     
 }
 .section2 {
@@ -100,4 +116,30 @@ nav ul li a{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+#strength, #weakness, #threats, #opportunities{
+    height: 3vh;
+    width: 100%;
+    margin-bottom:1rem ;
+}
+.c1, .c2, .c3, .c4{
+    width: 80%;
+    position: absolute;
+    
+}
+.c1, .c2, .c3, .c4  {
+    
+    color: white;
+    font-size: 1.7rem;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.conteudo>h1{
+    color: white;
+    padding: 10px 15px 0px 15px;
+    font-size: 3.5rem;
+    text-align: center;
 }

@@ -1,0 +1,73 @@
+@media screen and (max-width:957px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        background-image: none;
+        background-color: #2d3e52;
+    }
+    .swot-title{
+        font-size: 3rem;
+    }
+    .navlist {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-image: linear-gradient(to bottom, #B40001 25%,#089000 50%, #1167b1 75%,#ECBD00 100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        }
+   
+    nav ul li {
+        opacity: 10;
+        
+        
+    }
+    .navlist a:hover {
+        color: black;
+        font-weight: bolder;
+        background-color: white;
+    }
+    
+    .mobile-menu {
+        display: block;
+        transition: 0.3s;
+        
+       
+    }
+    .mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+
+    }
+    .mobile-menu.active .line2{
+        opacity: 0;
+    }
+    .mobile-menu.active .line3{ 
+        transform: rotate(45deg) translate(-5px, -7px);
+        
+    }
+    .navlist.active {
+        transform: translateX(0);
+        
+    }
+    
+    
+        
+   
+    
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
