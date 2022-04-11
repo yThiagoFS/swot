@@ -32,7 +32,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right,#2d3e52 20%, #B40001 39% ,#089000 56%, #1167b1 73%,#ECBD00 91%);
+    background-image: linear-gradient(to right, #2d3e52,#2d3e52e3 );
     height: 8vh;
     width: 100%;
     position: fixed;
@@ -40,7 +40,22 @@ nav {
     z-index: 10;
 
 }
+/* #B40001 39% ,#089000 56%, #1167b1 73%,#ECBD00 91% */
 
+.strength {
+    
+    background-image: linear-gradient(to left, #FF0101, #D60000, #B40001);
+}
+.weakness {
+    background-image: linear-gradient(to right, #0EFF00, #1FC600, #089000);
+}
+.opportunities{
+    background-image: linear-gradient(to left, #2a9df4, #187bcd, #1167b1);
+}
+.threats{
+    background-image: linear-gradient(to bottom, #FFDF00, #FFCC00, #ECBD00);
+    
+}
 nav ul {
     display: flex;
     
@@ -51,10 +66,12 @@ nav>a {
     
 }
 nav ul li{
-    padding: 2rem;
+    width: 88%;
+    padding: 1.7rem 2rem;
     
 }
 nav ul li a{
+    
     font-size: 1.7rem;
     font-variant: small-caps;
     font-weight: bold;

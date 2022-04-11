@@ -15,7 +15,7 @@
         right: 0;
         width: 50vw;
         height: 92vh;
-        background-image: linear-gradient(to bottom, #B40001 25%,#089000 50%, #1167b1 75%,#ECBD00 100%);
+        background-image: linear-gradient(to right, #2d3e52,#2d3e5270 );
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -25,9 +25,16 @@
    
     nav ul li {
         opacity: 10;
-        
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 88%;
+        height: 100%;
         
     }
+    
+    
     .navlist a:hover {
         color: black;
         font-weight: bolder;
